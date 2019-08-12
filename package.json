@@ -1,0 +1,63 @@
+{
+  "name": "egg-hello",
+  "version": "1.0.0",
+  "description": "hello plugin for egg",
+  "eggPlugin": {
+    "name": "hello",
+    "optionalDependencies": [
+      "onerror"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "hello"
+  ],
+  "dependencies": {
+    "nodejs-base64": "^1.0.3"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg": "^2.10.0",
+    "egg-bin": "^4.8.1",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.19.3",
+    "eslint": "^5.4.0",
+    "eslint-config-egg": "^7.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "files": [
+    "index.js",
+    "app.js",
+    "agent.js",
+    "index.d.ts",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "6, 7, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JackyHweng/deepexi-egg-hello.git"
+  },
+  "author": "Jacky <804828002@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JackyHweng/deepexi-egg-hello/issues"
+  },
+  "homepage": "https://github.com/JackyHweng/deepexi-egg-hello#readme"
+}
